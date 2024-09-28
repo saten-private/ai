@@ -40,6 +40,7 @@ describe('Anthropic completion', () => {
     const anthropic = new Anthropic({
       fetch: () => fetch(DEFAULT_TEST_URL),
       apiKey: 'sk-doesnt-matter',
+      dangerouslyAllowBrowser: true,
     });
 
     const data = new StreamData();
@@ -71,6 +72,7 @@ describe('Anthropic completion', () => {
     const anthropic = new Anthropic({
       fetch: () => fetch(DEFAULT_TEST_URL),
       apiKey: 'sk-doesnt-matter',
+      dangerouslyAllowBrowser: true,
     });
 
     const data = new StreamData();
@@ -107,6 +109,7 @@ describe('Anthropic message', () => {
     const anthropic = new Anthropic({
       fetch: () => fetch(MESSAGE_URL),
       apiKey: 'sk-doesnt-matter',
+      dangerouslyAllowBrowser: true,
     });
 
     const data = new StreamData();
@@ -138,6 +141,7 @@ describe('Anthropic message', () => {
     const anthropic = new Anthropic({
       fetch: () => fetch(MESSAGE_URL),
       apiKey: 'sk-doesnt-matter',
+      dangerouslyAllowBrowser: true,
     });
 
     const data = new StreamData();

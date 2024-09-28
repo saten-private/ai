@@ -34,6 +34,7 @@ export class Anthropic {
     return {
       baseURL: this.baseURL,
       headers: () => ({
+        'anthropic-dangerous-direct-browser-access': 'true',
         'anthropic-version': '2023-06-01',
         'x-api-key': loadApiKey({
           apiKey: this.apiKey,
